@@ -3,7 +3,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import compression from 'compression'
 import 'dotenv/config'
-import morgan from 'morgan';
+// import morgan from 'morgan';
 import error_types from '../config/Errors.js'
 
 /* xpress app intance */
@@ -19,7 +19,7 @@ app.set('PORT', process.env.PORT || 3000)
 app.use(helmet());
 app.use(cors());
 app.use(compression());
-app.use(morgan('dev'));
+// app.use(morgan('dev')); desactivada por entrar en conflicto en heroku ( dependencia de desarrollo, heroku no la instaló)
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
