@@ -39,7 +39,6 @@ export default {
                 },
                 Estados: Data.Estados,
                 Estados_Total: Data.Estados_Total,
-                Minicipios: Data.Municipios,
                 Municipios_Total: Data.Municipios_Total,
                 Parroquias: Data.Parroquias
 

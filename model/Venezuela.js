@@ -16,9 +16,8 @@ const venezuelaModel = new Schema({
         Este: [],
         Oeste: []
     },
-    Estados : [],
+    Estados : {},
     Estados_Total: { type: Number },
-    Municipios : [],
     Municipios_Total: { type: Number },
     Parroquias: { type: Number }
 });
