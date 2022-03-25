@@ -98,7 +98,9 @@ export default {
                 Fauna: Data.Fauna,
                 Arbol: Data.Arbol,
                 Municipios: Data.Municipios,
+                Parroquias : Data.Parroquias,
                 Municipios_Total: Data.Municipios_Total,
+                Parroquias_Total : Data.Parroquias_Total,
                 Historia: Data.Historia,
                 Informacion: {
                     "Artesania": Data.Informacion.Artesania,

@@ -16,7 +16,9 @@ const estadosModel = new Schema({
     Fauna: [],
     Arbol: { type: String },
     Municipios: [],
+    Parroquias: [],
     Total_Municipios: { type: Number },
+    Total_Parroquias: { type: Number },
     Historia: { type: String },
     Limites: {
         Norte: [],
@@ -25,12 +27,12 @@ const estadosModel = new Schema({
         Oeste: []
     },
     Informacion: {
-        Artesania: { type: String },
-        Folklore: { type: String },
-        Gastronomia: { type: String },
+        Artesania: [],
+        Folklore: [],
+        Gastronomia: [],
         Relieve: { type: String },
-        Economia: { type: String },
-        Hidrografia: { type: String },
+        Economia: [],
+        Hidrografia: [],
     },
     Recursos: {
         Forestales: [],
