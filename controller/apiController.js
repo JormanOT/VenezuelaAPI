@@ -57,8 +57,9 @@ export default {
     },
     getEstados: async (req, res) => {
         const Estado = req.params.Estado;
+        const nameLower = Estado.toLowerCase();
         try {
-            const Data = await estadosModel.findOne({ Nombre: `${Estado}` });
+            const Data = await estadosModel.findOne({ Nombre: `${nameLower}` });
             if (Data) {
                 res.status(200).json(Data);
             } else {
