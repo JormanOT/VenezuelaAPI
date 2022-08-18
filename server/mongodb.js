@@ -16,7 +16,7 @@ if (ENV === 'LOCAL') {
         .then(() => console.log(`Database Connected ! Local`))
         .catch(() => console.log('Database Disconnected Local'));
 } else {
-    mongoose.connect('mongodb+srv://JormanOT:JormanOT1997_02@cluster0.ibmz4.mongodb.net/VenezuelaAPI?retryWrites=true&w=majority', {
+    mongoose.connect(CLOUD, {
         useUnifiedTopology: true, useNewUrlParser: true
     })
         .then(() => console.log(`Database Connected ! Cloud`))
