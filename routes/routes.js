@@ -7,7 +7,7 @@ import CTRL  from '../controller/apiController.js'
 /* Metodos GET */
 
 Router.get('/', CTRL.getVenezuela);
-Router.get('/Venezuela/:Estado', CTRL.getEstados);
+Router.get('/:Estado', CTRL.getEstados);
 
 /* Metodos POST */
 Router.post('/Venezuela', security , CTRL.setVenezuela);
